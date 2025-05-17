@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Clone repo') {
 			steps {
-				git 'git-repo'
+				git 'https://github.com/cygday/tomcat-docker-job.git'
 			}
 		}
 		stage('build docker image'){
